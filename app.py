@@ -42,7 +42,7 @@ if generate:
     elif len(text_input.strip()) < 50:
         st.warning("Teks terlalu pendek! Minimal 50 karakter untuk hasil yang baik.")
     else:
-        with st.spinner("Memproses... ⏳ (Pertama kali akan lebih lama karena model perlu didownload)"):
+        with st.spinner("Memproses... ⏳"):
             if method == "Simple":
                 result = summarize_simple(text_input)
             else:
